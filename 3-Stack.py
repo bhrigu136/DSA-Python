@@ -1,3 +1,21 @@
+"""
+Stack (linear data structure)--> LIFO (Last In First Out)
+
+## Basic Operations
+Push -> Insert at top -> O(1)
+Pop -> Remove from top -> O(1)
+Peek/Top -> View the top element without removing it -> O(1)
+isEmpty -> Check if the stack is empty
+
+Top → [ 30 ] 
+        [ 20 ]
+        [ 10 ]  ← Bottom
+
+## Stack Overflow & Underflow
+Overflow: Inserting when stack is full (array implementation)
+Underflow: Removing when stack is empty
+
+"""
 class stack:
     def __init__(self):
         self.s = []
@@ -27,9 +45,9 @@ stk.push(10)
 stk.push(20)
 stk.push(30)
 # print(stk.peek())
-print(stk.pop())
-print(stk.pop())
-print(stk.pop())
+print(stk.pop()) #30
+print(stk.pop()) #20
+print(stk.pop()) #10
 
 """ Assignment:
 Insert at the end using append() and 
@@ -60,12 +78,12 @@ class Stack:
             return self.s.pop()
         
 obj = Stack()
-obj.push(100)
+obj.push(100) 
 obj.push(200)
 obj.push(300)
 
 # print(obj.peek())
 
-print(obj.pop())
-print(obj.pop())
-print(obj.pop())
+print(obj.pop()) #300
+print(obj.pop()) #200
+print(obj.pop()) #100

@@ -1,3 +1,38 @@
+"""
+Doubly Linked List --> linear data structure
+
+Each node has:
++-------+------+------+
+| Prev  | Data | Next |
++-------+------+------+
+- Prev -> pointer to previous node
+- Data -> value stored in the node
+- Next -> pointer to next node
+
+Head & Tail
+- Head -> First node of the list (Prev = None)
+- Tail -> Last node of the list (Next = None)
+
+| Operation     | Description                                            | Time Complexity                              |
+| ------------- | ------------------------------------------------------ | -------------------------------------------- |
+| **Traversal** | Visit all nodes forward or backward                    | O(n)                                         |
+| **Insertion** | Add a node at beginning, end, or a given position      | O(1) at head, O(1) at tail, O(n) at position |
+| **Deletion**  | Remove a node from beginning, end, or a given position | O(1) at head/tail, O(n) at position          |
+| **Search**    | Find a node by value                                   | O(n)                                         |
+
+
+### Insertion Types
+At beginning -> Node becomes new head
+At end -> Node added after tail
+At Middle -> Node inserted at specific position
+
+### Deletion Types
+From beginning -> Head moves to next node, new head's Prev = None
+From end -> Tail moves to previous node, new tail's Next = None
+From Middle -> Adjust pointers of previous and next nodes to skip the target node
+
+"""
+
 class Node:
     def __init__(self, value=None):
         self.prev = None
@@ -82,3 +117,11 @@ obj.deleteDLL(5)
 obj.deleteDLL(50)
 obj.deleteDLL(40)
 obj.displayDLL()
+
+
+"""
+**Circular Linked List** is a linear data structure where:
+The last node points back to the first node, forming a circle.
+Nodes can be singly or doubly linked.
+Unlike standard linked lists, there is no NULL at the end.
+"""

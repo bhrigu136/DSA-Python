@@ -1,3 +1,32 @@
+"""
+Singly Linked List --> linear data structure
+ -Each node has:
+    Data -> The value stored
+    Next -> Pointer to the next node
+
+- Traversal is in one direction only, from head → tail.
+Head → First node of the list
+Tail → Last node, points to None
+
+| Operation     | Description                                            | Time Complexity                    |
+| ------------- | ------------------------------------------------------ | ---------------------------------- |
+| **Traversal** | Visit all nodes from head to tail                      | O(n)                               |
+| **Insertion** | Add a node at beginning, end, or a given position      | O(1) at head, O(n) at end/position |
+| **Deletion**  | Remove a node from beginning, end, or a given position | O(1) at head, O(n) at end/position |
+| **Search**    | Find a node by value                                   | O(n)                               |
+
+## Insertion Types
+**At beginning** -> Node becomes new head
+**At end** -> Node added after tail (traverse to end)
+**At Middle** -> Node inserted at specific position
+
+## Deletion Types
+From beginning -> Head moves to next node
+From end -> Traverse to second last node, set its next = None
+From position -> Skip the node at that position
+
+
+"""
 class Node:
     def __init__(self, info, next=None):
         self.data = info
