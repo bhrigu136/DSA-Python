@@ -1,6 +1,7 @@
 """
 Queue - (linear data structure) --> FIFO (First In First Out)
 Types -
+- Simple Queue
 - Double Ended Queue
 - Circular Queue
 - Priority Queue
