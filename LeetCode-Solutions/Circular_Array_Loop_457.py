@@ -32,18 +32,21 @@ def circular_array_loop(arr):
 
   return False
 
-t = int(input("Enter number of test cases: ").strip())
-for _ in range(t):
-  arr = list(map(int, input("Enter array elements: ").strip().split()))
+if __name__ == "__main__":
+  n = int(input("Enter the size of the array: "))
 
-  print(circular_array_loop(arr))
+  print("Enter the elements of the array: ")
+  nums = list(map(int, input().split()))
+  
+  if circular_array_loop(nums):
+    print("Circular loop exists: True")
+  else:
+    print("Circular loop exists: False")
 
-""" Output:
-Enter number of test cases: 3
-Enter array elements: 2 -1 1 2 2  
-True
-Enter array elements: -1 -2 -3 -4 -5 6
-False
-Enter array elements: 1 -1 5 1 4
-True
+"""
+Output:
+Enter the size of the array: 5
+Enter the elements of the array: 
+2 -1 1 2 2
+Circular loop exists: True
 """
