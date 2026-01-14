@@ -24,3 +24,9 @@ if __name__ == "__main__":
     new_length = return_unique(arr)
     print("Number of unique elements:", new_length)
     print("Array after removing duplicates:", arr[:new_length])
+
+
+"""
+Time Complexity: O(n)
+Space Complexity: O(1) 
+"""
