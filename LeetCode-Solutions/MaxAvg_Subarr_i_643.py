@@ -16,3 +16,8 @@ if __name__ == "__main__":
     k = int(input("Enter the size of the subarray (k): "))
     result = find_max_avg(nums, k)
     print(f"The maximum average of subarrays of size {k} is: {result}")
+
+    """
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+    """
